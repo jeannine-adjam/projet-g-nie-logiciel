@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang= »fr »>
+<head>
+  <meta charset= »UTF-8 »>
+  <meta name= »viewport » content= »width=device-width, initial-scale=1.0 »>
+  <title>IgoTech – Agence Digitale</title>
+  <link href= »https://fonts.googleapis.com/css2 ?family=Inter :wght@400 ;600 ;700&display=swap » rel= »stylesheet »>
+  <style>
+    Body {
+    Font-family : ‘Inter’, sans-serif ;
+    Margin : 0 ;
+    Background : #f9f9f9 ;
+    Color : #1a1a1a ;
+  }
+
+  Header {
+    Background : hsla(234, 73%, 44%, 0.788) ;
+    Padding : 20px 40px ;
+    Display : flex ;
+    Justify-content : space-between ;
+    Align-items : center ;
+    Border-bottom : 1px solid #dddddd0d ;
+  }
+
+  Header h1 {
+    Color : #7a6341ea ;
+  }
+
+  Nav a {
+    Margin-left : 20px ;
+    Color : #252e0a ;
+    Text-decoration : none ;
+    Font-weight : 600 ;
+  }
+
+  .hero {
+    Background : #8a94b0 ;
+    Padding : 60px 40px ;
+    Text-align : center ;
+  }
+s
+  .hero h2 {
+    Font-size : 36px ;
+    Margin-bottom : 11px ;
+  }
+
+  .hero p {
+    Font-size : 20px ;
+    Margin-bottom : 22px ;
+  }
+
+  .hero button {
+    Padding : 12px 24px ;
+    Background : #2be9c6 ;
+    Border : none ;
+    Color : #171515 ;
+    Border-radius : 5px ;
+    Font-weight : 600 ;
+    Cursor : pointer ;
+  }
+
+  Section {
+    Padding : 60px 40px ;
+    Max-width : 1200px ;
+    Margin : auto ;
+  }
+
+  .services, .portfolio, .contact {
+    Display : grid ;
+    Gap : 30px ;
+  }
+
+  .services .item, .portfolio .item {
+    Background : #c5c4c437 ;
+    Padding : 20px ;
+    Border-radius : 10px ;
+    Box-shadow : 0 4px 8px rgba(248, 240, 240, 0.096) ;
+    Text-align : center ;
+  }
+
+  .services h3, .portfolio h3 {
+    Color : #2b7de9 ;
+  }
+
+  .testimonials {
+    Background : #1a8d8d ;
+    Text-align : center ;
+    Padding : 50px 30px ;
+  }
+
+  .testimonial {
+    Font-style : italic ;
+    Font-size : 18px ;
+    Margin-top : 20px ;
+  }
+
+  .contact form {
+    Display : flex ;
+    Flex-direction : column ;
+    Gap : 15px ;
+  }
+
+  .contact input, .contact textarea {
+    Padding : 12px ;
+    Border : 1px solid #c25d0f43 ;
+    Border-radius : 5px ;
+    Font-size : 16px ;
+  }
+
+  .contact button {
+    Width : fit-content ;
+    Padding : 12px 24px ;
+    Background : #2be967 ;
+    Color : #c41010e4 ;
+    Border : none ;
+    Border-radius : 5px ;
+    Font-weight : bold ;
+    Cursor : pointer ;
+  }
+
+  Footer {
+    Background : #140101 ;
+    Color : #f0ebebbb ;
+    Text-align : center ;
+    Padding : 30px ;
+  }
+
+  @media (min-width : 768px) {
+    .services, .portfolio {
+      Grid-template-columns : repeat(3, 1fr) ;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>IgoTech</h1>
+  <nav>
+    <a href= "#services">Services</a>
+    <a href= "#portfolio">Portfolio</a>
+    <a href= "#temoignages">Témoignages</a>
+    <a href= "#contact">Contact</a>
+  </nav>
+</header>
+
+  <section class= "hero ">
+    <h2>Agence Digitale à Votre Entreprise</h2>
+    <p>IgoTech vous accompagne dans vos projets numériques avec passion expertise et sur mesure.</p>
+    <button>Voir nos services</button>
+  </section>
+
+  <section id= "services ">
+    <h2>Nos Services</h2>
+    <div class= "services">
+      <div class= "item ">
+        <h3>Création et developpement de Sites Web</h3>
+        <p>Des sites modernes, rapides,performant et efficaces.</p>
+      </div>
+      <div class= "item ">
+        <h3>Creation et Gestion des Réseaux Sociaux</h3>
+        <p>Une stratégie social media adaptée à votre marque.</p>
+      </div>
+      <div class= "item ">
+        <h3>Marketing Digital</h3>
+        <p>strategie pour la croissance et l'attirance de la clientelle.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id= "portfolio ">
+    <h2>Portfolio</h2>
+    <div class= "portfolio ">
+      <div class= "item ">
+        <h3>Projet Web</h3>
+        <p>Site vitrine pour une société de services.</p>
+      </div>
+      <div class= "item ">
+        <h3>Application Mobile</h3>
+        <p>Application e-commerce sur mesure.</p>
+      </div>
+      <div class= "item ">
+        <h3>Identité Visuelle</h3>
+        <p>Rebranding d’une entreprise innovante.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class= "testimonials " id= "temoignages ">
+    <h2>Témoignages</h2>
+    <p class= "testimonial "> »IgoTech a transformé notre présence en ligne. Équipe réactive et professionnelle.c'est une belle esperiance avec Itigo. » <br>– Mouweunodji Vaillant</p>
+  </section>
+
+  <section class= "contact " id= "contact ">
+    <h2>Contact</h2>
+    <form>
+      <input type= "text " placeholder= "Nom ">
+      <input type= "email " placeholder= "Email ">
+      <textarea rows= "5 " placeholder= "Message "></textarea>
+      <button>Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy ; 2025 IgoTech | 123 Avenue Charles de Gaule, N'djaména| +235 60 19 07 64</p>
+  </footer>
+
+</body>
+</html>
+
